@@ -2,11 +2,13 @@
   {
     "id": 201,
     "name": "Tap Water",
-    "imageUrl": "images/drinks/water.jpg"
+    "imageUrl": "images/drinks/water.jpg",
+    "current_price": 0.00
   },
   {
     "id": 202,
     "name": "J2o",
-    "imageUrl": "images/drinks/j2o.jpg"
+    "imageUrl": "images/drinks/j2o.jpg",
+    "current_price": 10.00
   }
 ]

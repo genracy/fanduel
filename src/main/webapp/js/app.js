@@ -7,10 +7,10 @@ var app = angular.module('PrototypeApp', [
          getBars: function () {
              return $http.get('/data/bars.json');
          },
-          getPricesForBar: function (barId) {
-                      var allPrices = $http.get('/data/prices.json');
-
-                      return allPrices;
+          getDrinksForBar: function (barId) {
+                      var drinks = $http.get('/data/drinks.json');
+//TODO mock the search and table join
+                      return drinks;
 
                   }
      }
@@ -25,7 +25,7 @@ app.config(function($routeProvider, $locationProvider) {
     });
 });
 
-app.controller('BarController', function($rootScope, $scope, jsonGetter) {
+app.controller('BarController', function($scope, $location, jsonGetter) {
 
     var bars = [];
 
@@ -34,20 +34,23 @@ app.controller('BarController', function($rootScope, $scope, jsonGetter) {
       $scope.bars = bars;
     });
 
-    $scope.getDrinks = function(barId){
+    $scope.getDrinks = function(bar){
+    //        assuming search functionality and table join will be handled in the service
+         $location.path("/drinks")
+    }
+});
 
-//        assuming search functionality will be handled in the service
-        var prices = [];
 
-        jsonGetter.getPricesForBar(barId).then(function(response){
-            prices = response.data;
-
-            console.log(prices);
-
+app.controller('DrinkController', function($scope, jsonGetter){
+        var drinks = [];
+        jsonGetter.getDrinksForBar(101).then(function(response){
+            drinks = response.data;
+            $scope.drinks = drinks;
         });
 
-
-    }
-
 });
+
+
+
+
 
