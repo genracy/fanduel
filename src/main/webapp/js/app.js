@@ -6,7 +6,13 @@ var app = angular.module('PrototypeApp', [
      return {
          getBars: function () {
              return $http.get('/data/bars.json');
-         }
+         },
+          getPricesForBar: function (barId) {
+                      var allPrices = $http.get('/data/prices.json');
+
+                      return allPrices;
+
+                  }
      }
 });
 
@@ -27,6 +33,21 @@ app.controller('BarController', function($rootScope, $scope, jsonGetter) {
       bars = response.data;
       $scope.bars = bars;
     });
+
+    $scope.getDrinks = function(barId){
+
+//        assuming search functionality will be handled in the service
+        var prices = [];
+
+        jsonGetter.getPricesForBar(barId).then(function(response){
+            prices = response.data;
+
+            console.log(prices);
+
+        });
+
+
+    }
 
 });
 

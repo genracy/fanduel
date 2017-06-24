@@ -12,8 +12,8 @@
                 <!--placeholder="Search.." />-->
 
         <div class="scrollable-content">
-            <div class="list-group">
-                <a ng-repeat="bar in bars" href="" class="list-group-item">
+
+                <a ng-repeat="bar in bars" href="" class="list-group-item" ng-click="getDrinks(bar.id)">
                     <img style="max-height: 100px" ng-src="{{ bar.imageUrl }}"/> {{ bar.name }}  <i class="fa fa-chevron-right pull-right"></i>
                 </a>
             </div>

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 201,
+    "name": "Tap Water",
+    "imageUrl": "images/drinks/water.jpg"
+  },
+  {
+    "id": 202,
+    "name": "J2o",
+    "imageUrl": "images/drinks/j2o.jpg"
+  }
+]
