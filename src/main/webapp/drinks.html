@@ -8,6 +8,8 @@
 
         <div class="scrollable-content">
 
+            <span  class="list-group-item" >Order Total Cost: £{{ orderTotal() }}</span>
+
              <span ng-repeat="item in order" href="" class="list-group-item" ng-if="item.quantity > 0">
                         {{ item.name }} {{ item.quantity }}
              </span>

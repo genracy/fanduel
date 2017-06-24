@@ -81,9 +81,14 @@ app.controller('DrinkController', function($scope, jsonGetter){
              }
           }
 
-        $scope.showOrder = function(){
-            console.log(order);
-        }
+          $scope.orderTotal = function(){
+
+            var total = 0;
+            for (var o in order){
+                total += order[o].current_price * order[o].quantity;
+            }
+            return total;
+          }
 
 });
 
