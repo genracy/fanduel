@@ -6,19 +6,15 @@
 
     <div class="scrollable" ui-shared-state="searchBar" ng-controller="BarController">
 
-        <!--<input-->
-                <!--type="search"-->
-                <!--class="form-control scrollable-header"-->
-                <!--placeholder="Search.." />-->
-
         <div class="scrollable-content">
 
-                <a ng-repeat="bar in bars" href="" class="list-group-item" ng-click="getDrinks(bar)">
-                    <img style="max-height: 100px" ng-src="{{ bar.imageUrl }}"/> {{ bar.name }}  <i class="fa fa-chevron-right pull-right"></i>
-                </a>
-            </div>
+            <a ng-repeat="bar in bars" href="" class="list-group-item" ng-click="getDrinks(bar)">
+                <img style="max-height: 100px" ng-src="{{ bar.imageUrl }}"/> {{ bar.name }} <i
+                    class="fa fa-chevron-right pull-right"></i>
+            </a>
         </div>
-
     </div>
+
+</div>
 
 </div>

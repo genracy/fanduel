@@ -1,77 +1,77 @@
 [
   {
     "id": 101,
-    "name": "1",
+    "name": "Mos Eisley Cantina",
     "imageUrl": "images/bars/1.jpg"
   },
   {
     "id": 102,
-    "name": "2",
+    "name": "Band Cantina",
     "imageUrl": "images/bars/2.jpg"
   },
   {
     "id": 103,
-    "name": "3",
+    "name": "Jabba's Palace",
     "imageUrl": "images/bars/3.jpg"
   },
   {
     "id": 104,
-    "name": "4",
+    "name": "Green Dragon",
     "imageUrl": "images/bars/4.jpg"
   },
   {
     "id": 105,
-    "name": "5",
+    "name": "Nar Shaddaa",
     "imageUrl": "images/bars/5.jpg"
   },
   {
     "id": 106,
-    "name": "6",
+    "name": "Luke's Bar",
     "imageUrl": "images/bars/6.jpg"
   },
   {
     "id": 107,
-    "name": "7",
+    "name": "Generic Bar",
     "imageUrl": "images/bars/7.jpg"
   },
   {
     "id": 108,
-    "name": "8",
+    "name": "Another Bar",
     "imageUrl": "images/bars/8.jpg"
   },
   {
     "id": 109,
-    "name": "9",
+    "name": "Look, another bar",
     "imageUrl": "images/bars/9.jpg"
   },
   {
     "id": 110,
-    "name": "10",
+    "name": "These all start to look the same",
     "imageUrl": "images/bars/10.jpg"
   },
   {
     "id": 111,
-    "name": "11",
+    "name": "Don't think I've used this one yet",
     "imageUrl": "images/bars/11.jpg"
   },
   {
     "id": 112,
-    "name": "12",
+    "name": "This one looks nice",
     "imageUrl": "images/bars/12.jpg"
   },
   {
     "id": 113,
-    "name": "13",
+    "name": "I'm not very good wit names",
     "imageUrl": "images/bars/13.jpg"
   },
   {
     "id": 114,
-    "name": "14",
+    "name": "Can you tell?",
     "imageUrl": "images/bars/14.jpg"
   },
   {
     "id": 115,
-    "name": "15",
+    "name": "Pub 15",
     "imageUrl": "images/bars/15.jpg"
   }
 ]
