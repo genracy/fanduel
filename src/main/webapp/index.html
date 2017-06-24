@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fanduel Prototype</title>
+    <meta charset="UTF-8">
+    <base href="/" />
+
+    <link rel="stylesheet" href="/css/mobile-angular-ui-hover.min.css" />
+    <link rel="stylesheet" href="/css/mobile-angular-ui-base.min.css" />
+    <link rel="stylesheet" href="/css/mobile-angular-ui-desktop.min.css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-touch.min.js"></script>
+    <script src="/mobile-angular-ui.min.js"></script>
+
+    <script src="/js/app.js"></script>
+</head>
+    <body ng-app="PrototypeApp">
+
+        <div class="app">
+
+            <div class="navbar navbar-app navbar-absolute-top">
+
+                <div class="navbar-brand navbar-brand-center" yield-to="title">
+                    <span>Fanduel Prototype</span>
+                </div>
+            </div>
+
+            <div class="navbar navbar-app navbar-absolute-bottom">
+
+                <div class="btn-group justified">
+                    <a href="#" class="btn btn-navbar btn-icon-only"><i class="fa fa-home fa-navbar"></i></a>
+                    <a href="#" class="btn btn-navbar btn-icon-only"><i class="fa fa-list fa-navbar"></i></a>
+                </div>
+
+            </div>
+
+            <div class="app-body">
+                <ng-view class="app-content"></ng-view>
+            </div>
+        </div>
+    </body>
+</html>
