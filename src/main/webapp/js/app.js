@@ -1,7 +1,14 @@
 var app = angular.module('PrototypeApp', [
     "ngRoute",
     "mobile-angular-ui"
-]);
+])
+.factory('jsonGetter', function ($http) {
+     return {
+         getBars: function () {
+             return $http.get('/data/bars.json');
+         }
+     }
+});
 
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
@@ -12,19 +19,14 @@ app.config(function($routeProvider, $locationProvider) {
     });
 });
 
-app.controller('BarController', function($rootScope, $scope) {
+app.controller('BarController', function($rootScope, $scope, jsonGetter) {
 
-  var bars = [];
+    var bars = [];
 
-//TODO get the bar items via ajax call
-  for (var i = 1; i <= 15; i++) {
-    var bar  = {
-        name: 'bar ' + i,
-        imageUrl: 'images/' + i + '.jpg'
-    }
-    bars.push(bar);
-  }
+    jsonGetter.getBars().then(function(response) {
+      bars = response.data;
+      $scope.bars = bars;
+    });
 
-  $scope.bars = bars;
 });
 
