@@ -8,14 +8,23 @@
 
         <div class="scrollable-content">
 
+             <span ng-repeat="item in order" href="" class="list-group-item" >
+                 <div ng-if="item.quantity > 0">
+                        {{ item.name }} {{ item.quantity }}
+                 </div>
+        </span>
+
             <span ng-repeat="drink in drinks" href="" class="list-group-item" >
                 <img style="max-height: 100px" ng-src="{{ drink.imageUrl }}"/> {{ drink.name }}  £{{ drink.current_price }} <span class="pull-right"><button class="btn btn-default order-btn"  ng-click="selectDrink(drink)">+</button>  <button class="btn btn-default order-btn" ng-click="unselectDrink(drink)">-</button></span>
             </span>
         </div>
 
+
         <a class="btn btn-block btn-lg btn-primary scrollable-footer" ng-click="showOrder()">
             Show Order
         </a>
     </div>
+
+
 
 </div>
