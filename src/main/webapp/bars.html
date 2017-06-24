@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="/" />
+    <base href="/"/>
     <meta charset="UTF-8">
     <title>Bars</title>
 </head>
 <body>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Welcome !!</h1>
-            <p class="lead">Here is a list of bars</p>
+<div class="container">
 
+    <div class="scrollable" ui-shared-state="searchBar" ng-controller="BarController">
+        <!--<input-->
+                <!--ng-if="Ui.active('searchBar')"-->
+                <!--type="search"-->
+                <!--class="form-control scrollable-header"-->
+                <!--placeholder="Search.." />-->
+
+        <div class="scrollable-content">
+            <div class="list-group">
+                <a ng-repeat="bar in bars" href="" class="list-group-item">
+                    <img style="max-height: 100px" ng-src="{{ bar.imageUrl }}"/> {{ bar.name }}  <i class="fa fa-chevron-right pull-right"></i>
+                </a>
+            </div>
         </div>
 
+        <!--<a class="btn btn-block btn-lg btn-primary scrollable-footer" ui-toggle="searchBar">-->
+            <!--<i class="fa fa-search"></i>-->
+            <!--<span ui-hide="searchBar">Show</span>-->
+            <!--<span ui-show="searchBar">Hide</span>-->
+            <!--Search Bar-->
+        <!--</a>-->
     </div>
+
+</div>
 </body>
 </html>
