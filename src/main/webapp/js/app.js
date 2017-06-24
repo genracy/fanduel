@@ -16,8 +16,8 @@ app.controller('BarController', function($rootScope, $scope) {
 
   var bars = [];
 
-//TODO get the bar items
-  for (var i = 1; i <= 100; i++) {
+//TODO get the bar items via ajax call
+  for (var i = 1; i <= 15; i++) {
     var bar  = {
         name: 'bar ' + i,
         imageUrl: 'images/' + i + '.jpg'
