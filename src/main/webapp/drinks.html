@@ -15,7 +15,10 @@
              </span>
 
             <span ng-repeat="drink in drinks" href="" class="list-group-item">
-                <img style="max-height: 100px" ng-src="{{ drink.imageUrl }}"/> {{ drink.name }}  £{{ drink.current_price }} <span
+                <div style="width:150px" class="inline-block">
+                <img style="max-height: 100px" ng-src="{{ drink.imageUrl }}"/> </div>
+                <div class="inline-block" style="width: 200px">{{ drink.name }} </div>
+                <div class="inline-block" > £{{ drink.current_price }} </div>  <span
                     class="pull-right"><button class="btn btn-default order-btn"
                                                ng-click="selectDrink(drink)">+</button>  <button
                     class="btn btn-default order-btn" ng-click="unselectDrink(drink)">-</button></span>
