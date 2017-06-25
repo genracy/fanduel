@@ -1,7 +1,7 @@
 app.filter('searchFilter', function() {
     return function(arr, searchString) {
 
-        if(!searchString) {
+        if (!searchString) {
             return arr;
         }
 
@@ -9,8 +9,8 @@ app.filter('searchFilter', function() {
 
         var result = [];
 
-        angular.forEach(arr, function(el){
-            if(el.name.toLowerCase().indexOf(searchString) != -1) {
+        angular.forEach(arr, function(el) {
+            if (el.name.toLowerCase().indexOf(searchString) != -1) {
                 result.push(el);
             }
         });

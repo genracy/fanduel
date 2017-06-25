@@ -7,22 +7,31 @@
     <div class="scrollable" ui-shared-state="searchBar" ng-controller="DrinkController">
 
         <div class="scrollable-content">
-
             <span  class="list-group-item" >Order Total Cost: £{{ orderTotal() }}</span>
-
-             <span ng-repeat="item in order" href="" class="list-group-item" ng-if="item.quantity > 0">
+            <span ng-repeat="item in order"
+                  class="list-group-item"
+                  ng-if="item.quantity > 0">
                         {{ item.name }} {{ item.quantity }}
-             </span>
-
-            <span ng-repeat="drink in drinks" href="" class="list-group-item">
-                <div style="width:150px" class="inline-block">
-                <img style="max-height: 100px" ng-src="{{ drink.imageUrl }}"/> </div>
-                <div class="inline-block" style="width: 200px">{{ drink.name }} </div>
-                <div class="inline-block" > £{{ drink.current_price }} </div>  <span
-                    class="pull-right"><button class="btn btn-default order-btn"
-                                               ng-click="selectDrink(drink)">+</button>  <button
-                    class="btn btn-default order-btn" ng-click="unselectDrink(drink)">-</button></span>
             </span>
+
+            <div ng-repeat="drink in drinks"
+                  class="list-group-item">
+                <div style="width:150px" class="inline-block">
+                    <img style="max-height: 100px" ng-src="{{ drink.imageUrl }}"/>
+                </div>
+                <div class="inline-block" style="width: 200px">
+                    {{ drink.name }}
+                </div>
+                <div class="inline-block" >
+                    £{{ drink.current_price }}
+                </div>
+                <span class="pull-right">
+                    <button class="btn btn-default order-btn"
+                            ng-click="selectDrink(drink)">+</button>
+                    <button class="btn btn-default order-btn"
+                            ng-click="unselectDrink(drink)">-</button>
+                </span>
+            </div>
         </div>
     </div>
 
