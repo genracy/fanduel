@@ -2,7 +2,15 @@ app.controller('BarController', function($rootScope, $scope, $location, jsonGett
 
     var bars = [];
 
-    jsonGetter.getBars().then(function(response) {
+    //this relies on user granting permission - we should also have a way of searching without browser location
+    var currentLocation = {};
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position){
+            currentLocation = position.coords;
+        });
+    }
+
+    jsonGetter.getBars(currentLocation).then(function(response) {
         bars = response.data;
         $scope.bars = bars;
     });

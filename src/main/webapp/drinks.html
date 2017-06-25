@@ -6,13 +6,19 @@
     <div class="scrollable" ui-shared-state="searchBar">
 
         <div class="scrollable-content">
-            <span  class="list-group-item" >Order Total Cost: £{{ orderTotal() }} </span>
-            <span ng-repeat="item in order"
-                  class="list-group-item"
-                  ng-if="item.quantity > 0">
-                        {{ item.name }} {{ item.quantity }}
-
-            </span>
+            <div class="order-list">
+                <span  class="list-group-item" >Order Total Cost: £{{ orderTotal() }} </span>
+                <span ng-repeat="item in order"
+                      class="list-group-item"
+                      ng-if="item.quantity > 0">
+                     <div class="inline-block" style="width: 200px">
+                            {{ item.name }}
+                     </div>
+                     <div class="inline-block">
+                         {{ item.quantity }}
+                     </div>
+                </span>
+            </div>
 
             <div ng-repeat="drink in drinks"
                   class="list-group-item">

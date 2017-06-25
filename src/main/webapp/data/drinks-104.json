@@ -1,0 +1,20 @@
+[
+  {
+    "id": 205,
+    "name": "Fancy Ale",
+    "imageUrl": "images/drinks/fancy-ale.png",
+    "current_price": 12.50
+  },
+  {
+    "id": 206,
+    "name": "It Comes In Pints",
+    "imageUrl": "images/drinks/pint.jpg",
+    "current_price": 20.00
+  },
+  {
+    "id": 207,
+    "name": "By the Flaggon",
+    "imageUrl": "images/drinks/flaggon.jpg",
+    "current_price": 200.00
+  }
+]

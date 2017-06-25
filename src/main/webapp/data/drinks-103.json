@@ -12,9 +12,9 @@
     "current_price": 20.00
   },
   {
-    "id": 203,
-    "name": "No Moon Whiskey",
-    "imageUrl": "images/drinks/no-moon-whiskey.jpg",
-    "current_price": 20.00
+    "id": 204,
+    "name": "Jabba Juice",
+    "imageUrl": "images/drinks/jabba-juice.jpg",
+    "current_price": 200.00
   }
 ]

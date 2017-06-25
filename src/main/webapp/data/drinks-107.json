@@ -1,0 +1,62 @@
+drinks-106.json[
+  {
+    "id": 208,
+    "name": "Fosters",
+    "imageUrl": "images/drinks/fosters.jpg",
+    "current_price": 5.00
+  },
+  {
+    "id": 209,
+    "name": "Corona",
+    "imageUrl": "images/drinks/corona.jpg",
+    "current_price": 3.00
+  },
+  {
+    "id": 210,
+    "name": "Texas Beer",
+    "imageUrl": "images/drinks/texas-beer.jpg",
+    "current_price": 3.00
+  },
+  {
+    "id": 211,
+    "name": "Water",
+    "imageUrl": "images/drinks/water.jpg",
+    "current_price": 0.00
+  },
+  {
+    "id": 212,
+    "name": "J2O",
+    "imageUrl": "images/drinks/j2o.jpg",
+    "current_price": 4.00
+  },
+  {
+    "id": 213,
+    "name": "Coca Cola",
+    "imageUrl": "images/drinks/coke.jpg",
+    "current_price": 4.00
+  },
+  {
+    "id": 214,
+    "name": "Diet Coke",
+    "imageUrl": "images/drinks/diet-coke.png",
+    "current_price": 4.00
+  },
+  {
+    "id": 215,
+    "name": "Fanta",
+    "imageUrl": "images/drinks/fanta.jpg",
+    "current_price": 4.00
+  },
+  {
+    "id": 216,
+    "name": "Sprite",
+    "imageUrl": "images/drinks/sprite.jpg",
+    "current_price": 4.00
+  },
+  {
+    "id": 217,
+    "name": "Dr Pepper",
+    "imageUrl": "images/drinks/dr-pepper.jpg",
+    "current_price": 4.00
+  }
+]

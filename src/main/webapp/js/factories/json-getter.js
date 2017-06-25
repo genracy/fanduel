@@ -1,6 +1,6 @@
 app.factory('jsonGetter', function($http) {
     return {
-        getBars : function() {
+        getBars : function(location) {
             return $http.get('/data/bars.json');
         },
         getDrinksForBar : function(barId) {
