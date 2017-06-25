@@ -1,4 +1,4 @@
-app.controller('BarController', function($scope, $location, jsonGetter) {
+app.controller('BarController', function($rootScope, $scope, $location, jsonGetter, barService) {
 
     var bars = [];
 
@@ -9,6 +9,7 @@ app.controller('BarController', function($scope, $location, jsonGetter) {
 
     $scope.getDrinks = function(bar) {
         // assuming search functionality and table join will be handled in the service
+        barService.selectBar(bar);
         $location.path("/drinks")
     }
 });

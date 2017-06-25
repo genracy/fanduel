@@ -1,10 +1,13 @@
-app.controller('DrinkController', function($scope, jsonGetter) {
+app.controller('DrinkController', function($scope, jsonGetter, barService) {
+
     var order = [];
     var drinks = [];
 
     $scope.order = order;
+    $scope.bar = barService.getSelectedBar()
 
-    jsonGetter.getDrinksForBar(101).then(function(response) {
+console.log($scope.bar.id);
+    jsonGetter.getDrinksForBar($scope.bar.id).then(function(response) {
         drinks = response.data;
         $scope.drinks = drinks;
     });

@@ -1,17 +1,17 @@
-<div ui-content-for="title">
-    <span>Available Drinks</span>
-</div>
+<div class="container" ng-controller="DrinkController">
+    <div ui-content-for="title" >
+        <span>Available Drinks for {{ bar.name }}</span>
+    </div>
 
-<div class="container">
-
-    <div class="scrollable" ui-shared-state="searchBar" ng-controller="DrinkController">
+    <div class="scrollable" ui-shared-state="searchBar">
 
         <div class="scrollable-content">
-            <span  class="list-group-item" >Order Total Cost: £{{ orderTotal() }}</span>
+            <span  class="list-group-item" >Order Total Cost: £{{ orderTotal() }} </span>
             <span ng-repeat="item in order"
                   class="list-group-item"
                   ng-if="item.quantity > 0">
                         {{ item.name }} {{ item.quantity }}
+
             </span>
 
             <div ng-repeat="drink in drinks"
