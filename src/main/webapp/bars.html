@@ -11,19 +11,19 @@
                 placeholder="Search By Bar Name.."
                 ng-model="searchString"/>
 
-        <div class="scrollable-content">
+        <div class="scrollable-content inline-block" >
 
             <a ng-repeat="bar in filteredBars = (bars | searchFilter: searchString)"
                href=""
                class="list-group-item"
                ng-click="getDrinks(bar)">
-                    <div class="inline-block" style="width: 250px;">
-                        <img style="max-height: 100px" ng-src="{{ bar.imageUrl }}"/>
-                    </div>
-                    <div class="inline-block">
-                        {{ bar.name }}
-                    </div>
-                    <i class="fa fa-chevron-right pull-right"></i>
+                <div class="inline-block" style="width: 250px;">
+                    <img style="max-height: 100px" ng-src="{{ bar.imageUrl }}"/>
+                </div>
+                <div class="inline-block">
+                    {{ bar.name }}
+                </div>
+                <i class="fa fa-chevron-right pull-right"></i>
             </a>
         </div>
     </div>
