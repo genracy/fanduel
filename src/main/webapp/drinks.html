@@ -7,7 +7,7 @@
 
         <div class="scrollable-content">
             <div class="order-list">
-                <span  class="list-group-item" >Order Total Cost: £{{ orderTotal() }} </span>
+                <span  class="list-group-item" >Order Total Cost: £{{ orderTotal() | number:2 }} </span>
                 <span ng-repeat="item in order"
                       class="list-group-item"
                       ng-if="item.quantity > 0">
@@ -29,7 +29,7 @@
                     {{ drink.name }}
                 </div>
                 <div class="inline-block" >
-                    £{{ drink.current_price }}
+                    £{{ drink.current_price | number:2 }}
                 </div>
                 <span class="pull-right">
                     <button class="btn btn-default order-btn"
